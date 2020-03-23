@@ -29,6 +29,14 @@ const layoutConfig = (path: string) => {
         centered: true,
         paddingV: SPACING.MD
       };
+    case ROUTE_PATHS.SETTINGS.path:
+      return {
+        centered: true,
+        fluid: true,
+        fullW: true,
+        bgColor: '#fff',
+        paddingV: SPACING.NONE
+      };
     default:
       return {
         centered: true,
