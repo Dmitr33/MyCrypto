@@ -12,7 +12,7 @@ import {
   SettingsContext,
   StoreContext
 } from 'v2/services/Store';
-import { AccountList, FlippablePanel } from 'v2/components';
+import { AccountList, FlippablePanel, MobileNavBar } from 'v2/components';
 import { NetworkId } from 'v2/types';
 import { CustomNodeConfig } from 'v2/types/node';
 import { DEFAULT_NETWORK, IS_ACTIVE_FEATURE } from 'v2/config';
@@ -21,7 +21,6 @@ import settingsIcon from 'common/assets/images/icn-settings.svg';
 import NetworkNodes from './components/NetworkNodes';
 import AddOrEditNetworkNode from './components/AddOrEditNetworkNode';
 import { AddressBookPanel, AddToAddressBook, GeneralSettings, DangerZone } from './components';
-import MobileNavBar from 'v2/components/MobileNavBar';
 
 const SettingsHeading = styled(Heading)`
   display: flex;
