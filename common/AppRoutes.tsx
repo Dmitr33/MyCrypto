@@ -12,7 +12,7 @@ import {
   DefaultHomeHandler,
   PrivateRoute
 } from 'v2/routing';
-import { SPACING } from 'v2/theme';
+import { COLORS, SPACING } from 'v2/theme';
 
 const layoutConfig = (path: string) => {
   switch (path) {
@@ -22,7 +22,7 @@ const layoutConfig = (path: string) => {
         centered: false,
         fluid: true,
         fullW: true,
-        bgColor: '#fff'
+        bgColor: COLORS.WHITE
       };
     case ROUTE_PATHS.DASHBOARD.path:
       return {
@@ -34,8 +34,8 @@ const layoutConfig = (path: string) => {
         centered: true,
         fluid: true,
         fullW: true,
-        bgColor: '#fff',
-        paddingV: SPACING.NONE
+        bgColor: COLORS.WHITE,
+        paddingV: '0'
       };
     default:
       return {
